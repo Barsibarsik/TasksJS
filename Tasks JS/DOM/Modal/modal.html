@@ -1,0 +1,35 @@
+<!-- На странице создан произвольный контент и кнопка вызова модального 
+окна. По нажатию нужно отобразить оверлей (блок с затемнением) и 
+модальное окно по середине экрана. Разметка внутри оверлея должа быть 
+создана при помощи javaScript. Закрыть модальное окно можно нажатием 
+на кнопку закрыть либо по клику вне области модального окна. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TakDom1Modal</title>
+    <link rel="stylesheet" href="./modal.css">
+</head>
+<body>
+    <div class="container">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem magnam
+        ratione quasi alias adipisci molestias doloribus, provident eum natus
+        rerum, numquam delectus cum at nobis consectetur deserunt perspiciatis
+        eveniet temporibus.
+      </p>
+      <button class="btn" id="openOverlay">открыть</button>
+    </div>
+    <script type="html/template" id="overlayTemplate">
+      <div class="modal-container">
+        <a class="close" href="#">x</a>
+        <div class="content"></div>
+      </div>
+    </script>
+    <script src="./modal3.js"></script>
+  </body>
+</html>

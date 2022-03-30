@@ -1,0 +1,29 @@
+<!-- При изменении поля number создаются одинаковые блоки (div) внутри 
+которых расположено число обозначающее их порядковый номер (начиная 
+с 1). При изменении поля color эти блоки перекрашиваются в цвет 
+выбранный в этом поле. При первом изменении поля color закрашиваются 
+блоки с нечетными номерами (1, 3, 5, 7...), при втором изменении поля, 
+окрашиваются блоки с четными (2, 4, 6, 8...), при третьем снова 
+нечетные и т.д. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskDom3Blocks</title>
+    <link rel="stylesheet" href="./blocks.css">
+</head>
+<body>
+    <div class="blocks-coloring-container">
+        <div class="controls">
+          <input type="number" min="0" class="quantity-selector" />
+          <input type="color" class="color-selector" />
+        </div>
+        <div class="blocks"></div>
+      </div>
+      <script src="blocks.js"></script>
+</body>
+</html>
